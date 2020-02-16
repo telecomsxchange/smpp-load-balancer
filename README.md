@@ -1,8 +1,10 @@
 # smpp-load-balancer
 
-Goal
+** Goal ** 
 
-A single threaded proxy load balancer version that would only do connection binding authentication from clients and then relay all SMS messages to the upstream group of proxies that would do the authorization/routing and communication with vendors. 
+Scale the message per second performance of SMPP proxy project. 
+
+A single threaded (For Now) proxy load balancer version that would only do connection binding authentication from clients and then relay all SMS messages to the upstream group of proxies that would do the authorization/routing and communication with vendors. 
 
 This way we would be able to distribute the load between multiple single threaded proxy instances similar to what we'd do for SIP with kamailio and B2BUA. 
 
